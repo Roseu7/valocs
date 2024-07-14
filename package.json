@@ -1,0 +1,19 @@
+{
+    "name": "valocs-discord-bot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.py",
+    "scripts": {
+      "start": "python main.py"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Roseu7/valocs.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Roseu7/valocs/issues"
+    },
+    "homepage": "https://github.com/Roseu7/valocs#readme"
+  }
