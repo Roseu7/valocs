@@ -806,7 +806,7 @@ class Leaderboard(Group):
         leaderboard_image = await self.create_leaderboard_image(inter.guild)
         await inter.followup.send(file=File(leaderboard_image, filename="leaderboard.png"))
 
-    @app_commands.command(name="new", description="固定のリーダーボードを作成します")
+    @app_commands.command(name="new", description="固定のリーダーボードを作成します(管理者限定)")
     @app_commands.checks.has_permissions(administrator=True)
     async def new(self, inter: Interaction):
         existing_lb = supabase.table("val-lb").select("*").eq("guild_id", inter.guild.id).execute()
@@ -827,7 +827,7 @@ class Leaderboard(Group):
         )
         await inter.response.send_message(f":white_check_mark:リーダーボードを作成しました。", ephemeral=True, delete_after=5)
 
-    @app_commands.command(name="delete", description="固定のリーダーボードを削除します")
+    @app_commands.command(name="delete", description="固定のリーダーボードを削除します(管理者限定)")
     @app_commands.checks.has_permissions(administrator=True)
     async def delete(self, inter: Interaction):
         lb_data = supabase.table("val-lb").select("*").eq("guild_id", inter.guild.id).execute()
