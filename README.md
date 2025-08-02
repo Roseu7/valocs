@@ -13,7 +13,8 @@ VALOrant Custom Support bot
 
 ## インストール
 
-[こちら](https://discord.com/oauth2/authorize?client_id=1258810170449072280)のリンクからサーバーに追加できます。
+~~[こちら](https://discord.com/oauth2/authorize?client_id=1258810170449072280)のリンクからサーバーに追加できます。~~
+現在は停止中です。
 
 ## 使用方法
 
